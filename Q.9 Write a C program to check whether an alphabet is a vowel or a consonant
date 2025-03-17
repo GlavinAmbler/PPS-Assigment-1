@@ -1,27 +1,25 @@
 #include <stdio.h>
 
 int main() {
+    char alpha;
 
-char alphabet;
+    // Input from user
+    printf("Enter a character: ");
+    scanf("%c", &alpha);
 
-printf("Enter an alphabet: ");
+    // Check if it is a vowel using logical OR (||)
+    if ((alpha == 'a' || alpha == 'e' || alpha == 'i' || alpha == 'o' || alpha == 'u') || 
+        (alpha == 'A' || alpha == 'E' || alpha == 'I' || alpha == 'O' || alpha == 'U')) {
+        printf("'%c' is a Vowel.\n", alpha);
+    }
+    // Check if it is an alphabet using logical AND (&&)
+    else if ((alpha >= 'a' && alpha <= 'z') || (alpha >= 'A' && alpha <= 'Z')) {
+        printf("'%c' is a Consonant.\n", alpha);
+    }
+    // If neither vowel nor consonant, it's a special character
+    else {
+        printf("'%c' is a Special Character.\n", alpha);
+    }
 
-scanf("%c", &alphabet);
-
-if (alphabet == 'a' || alphabet == 'e'
-
-|| alphabet == 'i' || alphabet == 'o' || alphabet == 'u') {
-
-printf("%c is a vowel.\n", alphabet );
-
-} else {
-
-printf("%c is a consonant.\n",
-
-alphabet);
-
-}
-
-return 0;
-
+    return 0;
 }
