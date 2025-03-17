@@ -10,39 +10,27 @@ printf("a = %u, b = %u\n", a, b);
 
 // Bitwise AND
 
-printf("a & b = %u\n", a & b); // Output:
-
-1 (00000001)
+printf("a & b = %u\n", a & b); // Output:1 (00000001)
 
 // Bitwise OR
 
-printf("a | b = %u\n", a | b); // Output:
-
-13 (00001101)
+printf("a | b = %u\n", a | b); // Output:13 (00001101)
 
 // Bitwise XOR
 
-printf("a^ b = %u\n", a^ b); // Output:
-
-12 (00001100)
+printf("a^ b = %u\n", a^ b); // Output:12 (00001100)
 
 // Bitwise NOT (One's Complement)
 
-printf("~a = %u\n", ~a); // Output:
-
-4294967290 (assuming 32-bit unsigned int)
+printf("~a = %u\n", ~a); // Output:-5 (assuming 32-bit unsigned int)
 
 // Left Shift
 
-printf("b << 1 = %u\n", b << 1); //
-
-Output: 18 (00010010)
+printf("b << 1 = %u\n", b << 1); //Output: 18 (00010010);
 
 // Right Shift
 
-printf("b >> 1 = %u\n", b >> 1); //
-
-Output: 4 (00000100)
+printf("b >> 1 = %u\n", b >> 1); //Output: 4 (00000100)
 
 return 0;
 
