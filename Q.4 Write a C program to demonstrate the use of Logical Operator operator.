@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int main() {
+
+int a = 10;
+
+int b = 5;
+
+int c = 0;
+
+// Logical AND operator (&&)
+
+if (a > b && a != c) {
+
+printf("Both conditions are true: a is greater than b AND a is not equal to c\n");
+
+} else {
+
+printf("At least one condition is
+
+false for AND operator\n");
+
+}
+
+// Logical OR operator (||)
+
+if (a > b || a == c) {
+
+printf("At least one condition is
+
+true: a is greater than b OR a is equal to c\n");
+
+} else {
+
+printf("Both conditions are false for OR operator\n");
+
+}
+
+// Logical NOT operator (1)
+
+if (!c) {
+
+printf("The condition is true because c is NOT true (c is 0)\n");
+
+} else {
+
+printf("The condition is false because c is true\n");
+
+}
+
+return 0;
+
+}
+
